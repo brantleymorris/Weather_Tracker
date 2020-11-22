@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/> 
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center bg-secondary text-light">Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-center">
+                <div class="container bg-light" id="searchAndRecent">
+                    <h3>Search for a City:</h3>
+                    <div class="row mb-2">
+                        <input type="text" class="col-8" id="cityInput">
+                        <button class="col-4" id="submitButton">Submit</button>
+                    </div>
+                    <div class="row" id="recentSearches">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="container">
+                    <div class="row justify-content-left">
+                        <div class="border rounded col-12" id="currentWeather">
+                            <h2>Current Weather</h2>
+                            <h5 id="cityName"></h5>
+                            <img src=" " id="weatherIcon">
+                            <p id="currentTemp">Temperature:</p>
+                            <p id="currentHumidity">Humidity:</p>
+                            <p id="currentWind">Wind:</p>
+                            <p id="currentUV">UV Index</p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-left">
+                        <div class="col-12 justify-content-center">
+                            <h2>5 Day Forecast:</h2>
+                            <div class="container">
+                                <div class="row" id="5day">
+                                    <div class="col-6 col-md-4 col-lg-2 rounded text-light bg-primary m-2">
+                                        <p id="day0">Day 1</p>
+                                        <img src=" " id="icon0">
+                                        <p id="temp0"></p>
+                                        <p id="humid0"></p>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-2 rounded text-light bg-primary m-2">
+                                        <p id="day1">Day 2</p>
+                                        <img src=" " id="icon1">
+                                        <p id="temp1"></p>
+                                        <p id="humid1"></p>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-2 rounded text-light bg-primary m-2">
+                                        <p id="day2">Day 3</p>
+                                        <img src=" " id="icon2">
+                                        <p id="temp2"></p>
+                                        <p id="humid2"></p>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-2 rounded text-light bg-primary m-2">
+                                        <p id="day3">Day 4</p>
+                                        <img src=" " id="icon3">
+                                        <p id="temp3"></p>
+                                        <p id="humid3"></p>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-2 rounded text-light bg-primary m-2">
+                                        <p id="day4">Day 5</p>
+                                        <img src=" " id="icon4">
+                                        <p id="temp4"></p>
+                                        <p id="humid4"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script><!--moment-->
+    <script src="./assets/script.js"></script>
+</body>
+</html>
